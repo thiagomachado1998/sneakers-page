@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="pc/style.css">
+</head>
+
+<body id="paper" >
+
+<header>
+    <h1>Sneakers</h1>
+    <div>
+        
+        <img src="imagens/wpp.png" alt="">
+        <img src="imagens/githublogo.png" alt="">
+        <img src="imagens/linkdinlogo.png" alt="">
+    </div>
+</header>
+
+<main>
+    
+    <div id="divDunk"   onmouseenter="func()" onmouseleave="func2()">
+        <h2 id="h22" >Dunk, um icone.. espetaculo de Sneaker</h2>
+        <div id="textDunk" >
+            <p id="ptextDunk" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora corporis non dolorum vero consectetur vel minima soluta explicabo accusamus ipsum voluptas quod pariatur quas quae ut laboriosam, nesciunt hic!</p>
+        </div>
+       
+    </div>
+    <div id="divJordan1"  onmouseenter="jordan1()" onmouseleave="jordan2()">
+        <h2 id="h2jordan1" >Jordan 1 low .. o moderninho dos jordans</h2>
+        <div id="textJordan1">
+            <p id="pJordan1" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam enim molestias, porro architecto voluptas, et quisquam ad aliquam quae reiciendis autem obcaecati expedita consectetur sit, atque fugiat iusto ipsum. Maxime.</p>
+        </div>
+    </div>
+
+    <div id="Divvapormax"  onmouseenter="vapormax()"  onmouseleave="vapormax2()" >
+        <h2 id="h2Vapormax">air force 1, mas o off white</div>
+          
+    </div>
+
+    <div>
+        <iframe onmouseenter="iframe1()" id="iframe" src="./frame.html" frameborder="0"></iframe>
+    </div>
+    
+</main>
+
+</body>
+
+<script>
+    var col ='rgba(128, 128, 128, 0.719)'
+        function func (a){
+            
+            var papel = document.getElementById('paper').backgroundImage = 'url(https://a.allegroimg.com/original/1e3e38/dce5e10f45bb937c2424d4f35cad)'
+            paper.style.backgroundImage = papel
+            h22.style.display ='none'
+            textDunk.style.display ='block'
+            h2jordan1.style.color =col
+            h2Vapormax.style.color = col
+            
+        }
+
+        function func2(){
+            h22.style.display ='block'
+            textDunk.style.display ='none'
+            h2jordan1.style.color ='white'
+            h2Vapormax.style.color ='white'
+        }
+
+        function jordan1(){
+            paper.style.backgroundImage ='url(https://media.karousell.com/media/photos/products/2021/10/31/air_jordan_1_low_mocha_1635678290_85da70c5.jpg'
+            h22.style.color = col
+            h2jordan1.style.display ='none'
+            pJordan1.style.display ='block'
+            h2Vapormax.style.color = col
+        }
+        
+        function jordan2(){
+            h22.style.color ='white'
+            h2jordan1.style.display ='block'
+            pJordan1.style.display ='none'
+            h2Vapormax.style.color='white'
+        }
+
+        function vapormax (){
+            paper.style.backgroundImage ='url(https://cf.shopee.tw/file/ea3d986adf8c01b9773263887ae3d414)'
+            h22.style.color =col
+            h2jordan1.style.color =col
+            iframe.style.display ='block'
+        }
+
+        function vapormax2 () {
+            h22.style.color ='white'
+            h2jordan1.style.color ='white'
+            iframe.style.display ='none'
+        }
+
+        function iframe1 (){
+            iframe.style.display ='block'
+        }
+    
+</script>
+</html>
+

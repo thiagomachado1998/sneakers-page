@@ -5,6 +5,7 @@
 margin: 0px;
 padding: 0px;
 font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body{
@@ -40,12 +41,13 @@ header div {
 header > div > img {
     margin: 0px 5px;
     width: 2%;
+    
 }
 
 header > div > img:hover {
-    border-bottom: 1px white solid;
-    padding-bottom: 5px;
-
+    box-shadow: 0px 0px 1px white;
+    transform: translate(5%, 0%);
+    box-shadow: 1px 11px 19px 0px rgba(255, 255, 255, 0.466);
     transition-duration: .5s;
 
 }
